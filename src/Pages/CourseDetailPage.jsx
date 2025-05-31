@@ -73,7 +73,7 @@ function CourseDetails() {
                   </p>
                 </div>
                 <div>
-                  <h3 className="text-4xl md:text-6xl font-bold mb-1 ">Description</h3>
+                  <h3 className="text-2xl md:text-4xl font-bold mb-1 ">Description</h3>
                   <p className="text-lg md:text-xl font-light mb-5 leading-relaxed">{course.description}</p>
                 </div>
 
