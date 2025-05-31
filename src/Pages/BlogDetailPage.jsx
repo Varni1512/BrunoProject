@@ -40,10 +40,10 @@ const BlogDetailPage = () => {
             <div className="main-container">
               <div className="relative ">
                 <div className="bg-gradient-to-b from-transparent to-black absolute top-0 left-0 z-20 h-full w-full" />
-                <img
+               <img
                   src={blog?.coverImage}
                   alt={`Course id ${blog?.id}`}
-                  className="object-cover w-full h-36 md:h-[70vh] rounded-xl"
+                  className=" object-top w-full h-36 md:h-[70vh] rounded-xl"
                 />
               </div>
               <h1 className="text-[#DFB6B2] text-4xl md:text-6xl font-bold my-10">
