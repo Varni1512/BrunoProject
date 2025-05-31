@@ -66,13 +66,14 @@ function Courses() {
                         className={`rounded-2xl overflow-hidden bg-[#080808] flex flex-col h-full drop-shadow-[6px_2px_4px_#53295970]
               ${isLastOdd ? "lg:col-span-2 lg:mx-auto lg:w-1/2" : ""}`}
                       >
-                        <div className="w-full bg-white flex justify-center items-center h-60">
+                        <div className="w-full h-60 overflow-hidden rounded-2xl">
                           <img
                             src={course?.coverImage}
                             alt={`Course id ${course?.id}`}
-                            className="object-contain max-h-full"
+                            className="w-full h-full object-cover object-top"
                           />
                         </div>
+
 
                         <div className="py-2 px-4 flex flex-col flex-grow">
                           <h3 className="text-[#DFB6B2] text-xl md:text-2xl font-bold ">
