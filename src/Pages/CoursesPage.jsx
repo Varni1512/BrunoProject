@@ -23,27 +23,27 @@ function Courses() {
     fetchCourses();
   }, []);
 
- 
+
 
   return (
     <>
       {
         isLoading ? (
 
-          
+
           <section id="hero" className="bg-black h-screen w-full flex pt-32 justify-center">
             <Loader2 className="animate-spin h-8 w-8" />
           </section>
         ) : (
           <>
-         {
-            courses.length === 0 && !isLoading && (
-              <section id="hero" className="bg-black h-screen w-full flex pt-32 justify-center">
-                <p>No blogs found</p>
-              </section>
-            )
-        
-          }
+            {
+              courses.length === 0 && !isLoading && (
+                <section id="hero" className="bg-black h-screen w-full flex pt-32 justify-center">
+                  <p>No blogs found</p>
+                </section>
+              )
+
+            }
             <section id="hero" className="bg-black pb-8 pt-24 md:pt-24">
               <div className="main-container py-6">
                 <h1 className="text-6xl text-center font-bold mb-3">Courses</h1>
@@ -66,13 +66,14 @@ function Courses() {
                         className={`rounded-2xl overflow-hidden bg-[#080808] flex flex-col h-full drop-shadow-[6px_2px_4px_#53295970]
               ${isLastOdd ? "lg:col-span-2 lg:mx-auto lg:w-1/2" : ""}`}
                       >
-                        <div className="w-full">
+                        <div className="w-full bg-white flex justify-center items-center h-60">
                           <img
                             src={course?.coverImage}
                             alt={`Course id ${course?.id}`}
-                            className="object-cover w-full h-60"
+                            className="object-contain max-h-full"
                           />
                         </div>
+
                         <div className="py-2 px-4 flex flex-col flex-grow">
                           <h3 className="text-[#DFB6B2] text-xl md:text-2xl font-bold ">
                             {course?.title}
