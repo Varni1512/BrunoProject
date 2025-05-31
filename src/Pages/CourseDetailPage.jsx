@@ -51,9 +51,8 @@ function CourseDetails() {
                   <img
                     src={course?.coverImage}
                     alt={`Course id ${course?.id}`}
-                    className="object-cover w-full h-36 md:h-[70vh] rounded-xl"
+                    className="object-contain w-full h-36 md:h-[70vh] rounded-xl bg-white"
                   />
-
                 </div>
 
                 <h1 className="text-[#DFB6B2] text-4xl md:text-6xl font-bold my-3">
@@ -62,7 +61,7 @@ function CourseDetails() {
                 <h3 className="text-[#FBE5D8AD] text-lg md:text-xl font-bold my-3">
                   {course?.subTitle}
                 </h3>
-          
+
                 <div className="my-5 md:flex gap-4">
                   <StarRating rating={course?.ratings} />
                   <p className="text-lg md:text-xl my-2 md:my-0">
@@ -78,7 +77,7 @@ function CourseDetails() {
                 </div>
 
                 <div>
-                  <h3 className="text-2xl md:text-4xl font-bold mb-2">Requirements</h3>
+                  <h3 className="text-4xl md:text-6xl font-bold mb-2">Requirements</h3>
                   <div className="prose lg:prose-xl  text-white dark:prose-invert max-w-full" dangerouslySetInnerHTML={{ __html: course?.requirements }} />
 
                 </div>
@@ -87,13 +86,13 @@ function CourseDetails() {
                   <span className="font-bold bg-gradient-to-r from-[#412345] to-[#DFB6B2] bg-clip-text text-transparent">Price: {currencies.filter((curr) => curr.code === course?.currency)[0]?.symbol}{course?.price}</span>
                 </div>
                 <Link to="https://koalendar.com/e/30-follow-up-session-with-bruno" target="_blank" className="w-full  relative  flex items-center justify-center min-w-full text-2xl text-center py-4  rounded-lg animated-border">
-                  <span>Book a Free Call</span> 
+                  <span>Book a Free Call</span>
                 </Link>
               </div>
             </section>
 
-            <section  className=" bg-black py-8 md:py-16">
-              <StudentsReviews/>
+            <section className=" bg-black py-8 md:py-16">
+              <StudentsReviews />
             </section>
           </>
         )
