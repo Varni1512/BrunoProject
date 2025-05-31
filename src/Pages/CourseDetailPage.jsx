@@ -49,10 +49,10 @@ function CourseDetails() {
                 <div className="relative ">
                   <div className="bg-gradient-to-b from-transparent to-black absolute top-0 left-0 z-20 h-full w-full" />
                   <img
-                    src={course?.coverImage}
-                    alt={`Course id ${course?.id}`}
-                    className="object-contain w-full h-36 md:h-[70vh] rounded-xl bg-white"
-                  />
+                  src={course?.coverImage}
+                  alt={`Course id ${course?.id}`}
+                  className="w-full h-36 md:h-[70vh] object-cover object-top rounded-xl"
+                />
                 </div>
 
                 <h1 className="text-[#DFB6B2] text-4xl md:text-6xl font-bold my-3">
