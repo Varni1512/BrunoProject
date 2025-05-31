@@ -49,7 +49,7 @@ const BlogDetailPage = () => {
               <h1 className="text-[#DFB6B2] text-4xl md:text-6xl font-bold my-10">
                 {blog?.metaData?.title}
               </h1>
-              <p className="text-[#FBE5D8] text-2xl md:text-4xl font-light my-10">
+              <p className="text-[#FBE5D8] text-2xl md:text-2xl font-light my-10">
                 {blog?.metaData.description}
               </p>
               <div className="prose-lg lg:prose-2xl dark:prose-invert max-w-full text-white" dangerouslySetInnerHTML={{ __html: blog?.editorContent }} />
