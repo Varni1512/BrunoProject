@@ -78,7 +78,7 @@ function CourseDetails() {
                 </div>
 
                 <div>
-                  <h3 className="text-4xl md:text-6xl font-bold mb-2">Requirements</h3>
+                  <h3 className="text-2xl md:text-4xl font-bold mb-2">Requirements</h3>
                   <div className="prose lg:prose-xl  text-white dark:prose-invert max-w-full" dangerouslySetInnerHTML={{ __html: course?.requirements }} />
 
                 </div>
