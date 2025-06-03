@@ -14,7 +14,7 @@ export default function Hero() {
       />
 
       <h1 className="text-5xl md:text-7xl font-bold  text-white max-w-6xl mx-auto">
-        <span>A </span>
+        <span>Real </span>
         <span className="font-afacad bg-gradient-to-r from-[#532959] via-[#824D69] to-[#DFB6B2] text-transparent bg-clip-text">
         Spanish,
         </span>{" "}
