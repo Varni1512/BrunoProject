@@ -29,7 +29,7 @@ const Header = () => {
               </div>
             </div>
             <h2 className="text-[10px] md:text-xs text-white">
-              Language Learning Platform
+              Your Spanish Journey Starts Here
             </h2>
           </NavLink>
 
