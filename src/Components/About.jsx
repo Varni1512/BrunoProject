@@ -44,7 +44,7 @@ export default function About() {
           <div className="text-white relative text-center md:text-start">
             <h2 className="text-7xl font-extrabold mb-4">
               <span className="font-afacad bg-gradient-to-r from-[#532959] via-[#824D69] to-[#532959] text-transparent bg-clip-text">
-                Bruno S.
+                Bruno Salazar
               </span>
             </h2>
             <p className="light-txt-color text-xl mb-4 md:pr-16">
