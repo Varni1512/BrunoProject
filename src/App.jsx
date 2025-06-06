@@ -10,6 +10,7 @@ import CourseDetailPage from "./Pages/CourseDetailPage";
 import BlogsPage from "./Pages/BlogsPage";
 import BlogDetailPage from "./Pages/BlogDetailPage";
 import ScrollToTop from "./Components/ScrollToTop";
+import LessonsPage from "./Pages/Lesson";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
         <Route path="/blogs" element={<BlogsPage />} />
         <Route path="/blogs/:id" element={<BlogDetailPage />} />
         <Route path="/courses" element={<CoursesPage />} />
+        <Route path="/lessons" element={<LessonsPage />} />
         <Route path="/courses/:id" element={<CourseDetailPage />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<Navigate to={'/#aboutt'}/>} />
