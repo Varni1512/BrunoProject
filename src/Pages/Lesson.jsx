@@ -209,7 +209,7 @@ function LessonsPage() {
             />
           </div>
           <div className="flex-1">
-            <h2 className="font-afacad font-bold text-xl leading-[75px] mb-8 whitespace-nowrap">
+            <h2 className="font-afacad font-bold text-5xl leading-[75px] mb-8 whitespace-nowrap">
               What all lessons include:
             </h2>
             <ul className="font-afacad font-normal text-2xl text-[#FBE5D8] space-y-4">
