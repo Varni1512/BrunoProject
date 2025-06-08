@@ -377,8 +377,7 @@ function LessonsPage() {
           Lessons
         </h1>
         <p className="text-[18px] sm:text-[25px] max-w-7xl mx-auto font-afacad leading-relaxed text-[#FBE5D8]">
-          Just like any great journey, you need more than a map; you need an
-          experienced guide...
+          Just like any great journey, you need more than a map: you need an experienced guide who knows the terrain, celebrates your milestones, and helps you navigate the challenging paths. That's where I come in.
         </p>
       </div>
 
