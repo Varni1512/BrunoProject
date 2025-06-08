@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { ChevronDown } from "lucide-react";
 import lesson1 from "../assets/lesson1.png";
 import lesson2 from "../assets/lesson2.png";
+import lesson3 from "../assets/lesson3.png";
+import lesson4 from "../assets/lesson4.png";
 import student from "../assets/student.png";
 import clockImage from "../assets/clock.png";
 import clock from "../assets/time.png";
@@ -73,7 +75,7 @@ const lessonCards = [
 
         <div className="mt-6 mb-8 rounded-lg overflow-hidden">
           <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMXRL142Ruzw4AWO2Bgub4YQNbh10_suqDMQ&s"
+            src={lesson3}
             alt="Bruno video call lesson"
             className="w-full h-auto object-cover rounded-lg"
           />
@@ -165,10 +167,11 @@ const lessonCards = [
 
         <div className="mt-6 mb-8 rounded-lg overflow-hidden">
           <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMXRL142Ruzw4AWO2Bgub4YQNbh10_suqDMQ&s"
+            src={lesson4}
             alt="Bruno video call lesson"
             className="w-full h-auto object-cover rounded-lg"
           />
+
         </div>
 
         <div className="space-y-4">
