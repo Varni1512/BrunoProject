@@ -58,8 +58,8 @@ const lessonCards = [
             lesson with me.
           </li>
         </ul>
-        <button className="mt-4 w-full bg-black text-white py-2 rounded-md font-semibold">
-          Book a Free Call
+        <button className="mt-4 w-full text-white py-2 rounded-md font-semibold animate-border">
+          <span>Book a Free Call</span>
         </button>
       </>
     ),
@@ -150,8 +150,8 @@ const lessonCards = [
             </ul>
           </div>
         </div>
-        <button className="mt-4 w-full bg-black text-white py-2 rounded-md font-semibold">
-          Book a Free Call
+        <button className="mt-4 w-full text-white py-2 rounded-md font-semibold animate-border">
+          <span>Book a Free Call</span>
         </button>
       </>
     )
@@ -243,8 +243,8 @@ const lessonCards = [
             </ul>
           </div>
         </div>
-        <button className="mt-4 w-full bg-black text-white py-2 rounded-md font-semibold">
-          Book a Free Call
+        <button className="mt-4 w-full text-white py-2 rounded-md font-semibold animate-border">
+          <span>Book a Free Call</span>
         </button>
       </>
     )
@@ -276,8 +276,8 @@ const lessonCards = [
 
         <p className="mt-1">• 30-min Follow-Up Individual Session: $15/14€</p>
 
-        <button className="mt-6 w-full bg-black text-white py-3 rounded-md font-semibold hover:bg-gray-900 transition">
-          Book a Free Call
+        <button className="mt-4 w-full text-white py-2 rounded-md font-semibold animate-border">
+          <span>Book a Free Call</span>
         </button>
       </>
     )
