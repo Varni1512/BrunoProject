@@ -116,58 +116,51 @@ const policies = [
 
 const LessonCard = ({ id, title, content, expanded, onToggle }) => {
   const getPlainPreview = () => {
-  // Case 1: Content is just a string
-  if (typeof content === 'string') return content;
+    if (typeof content === "string") return content;
 
-  // Case 2: Content is a <p> or other element with children
-  const children = content?.props?.children;
+    const children = content?.props?.children;
+    if (typeof children === "string") return children;
 
-  if (typeof children === 'string') return children;
-
-  if (Array.isArray(children)) {
-    // Look for the first text inside <p> or similar
-    for (let child of children) {
-      if (typeof child === 'string') {
-        return child;
-      } else if (
-        child?.props?.children &&
-        typeof child.props.children === 'string'
-      ) {
-        return child.props.children;
-      } else if (
-        Array.isArray(child?.props?.children)
-      ) {
-        const nested = child.props.children.find(
-          (c) => typeof c === 'string'
-        );
-        if (nested) return nested;
+    if (Array.isArray(children)) {
+      for (let child of children) {
+        if (typeof child === "string") return child;
+        if (
+          child?.props?.children &&
+          typeof child.props.children === "string"
+        ) {
+          return child.props.children;
+        }
+        if (Array.isArray(child?.props?.children)) {
+          const nested = child.props.children.find(
+            (c) => typeof c === "string"
+          );
+          if (nested) return nested;
+        }
       }
     }
-  }
 
-  return 'Preview not available';
-};
-
+    return "Preview not available";
+  };
 
   return (
     <div
-      className={`w-[423px] rounded-[15px] overflow-hidden transition-all duration-300 ${
+      className={`rounded-[15px] overflow-hidden transition-all duration-300  flex flex-col justify-start  ${
         expanded ? "bg-[#7D4C70] border-r-[5px] border-[#B0859E]" : "bg-black"
       }`}
     >
       <button
         onClick={() => onToggle(id)}
-        className="w-full px-6 py-2 text-left flex justify-between items-center transition-colors"
+        className="w-full px-8 py-4 text-left flex justify-between items-center transition-colors "
       >
-        <h4 className="text-lg font-bold text-white">{title}</h4>
+        <h4 className="text-2xl font-bold text-white">{title}</h4>
         <ChevronDown
-          className={`w-5 h-5 shrink-0 ml-4 text-white transform transition-transform duration-300 ${
+          className={`w-6 h-6 shrink-0 ml-4 text-white transform transition-transform duration-300 ${
             expanded ? "rotate-180" : ""
           }`}
         />
       </button>
 
-      <div className="px-6 pb-6 text-[#FBE5D8] text-sm">
+      <div className="px-8 pb-8 text-[#FBE5D8] text-[18px] leading-relaxed flex-1">
         {expanded ? (
           <div className="border-t border-[#B0859E] pt-4 space-y-4">
             {content}
@@ -216,10 +209,10 @@ function LessonsPage() {
             />
           </div>
           <div className="flex-1">
-            <h2 className="font-afacad font-bold text-[70px] leading-[75px] mb-8 whitespace-nowrap">
+            <h2 className="font-afacad font-bold text-xl leading-[75px] mb-8 whitespace-nowrap">
               What all lessons include:
             </h2>
-            <ul className="font-afacad font-normal text-[30px] text-[#FBE5D8] space-y-4">
+            <ul className="font-afacad font-normal text-2xl text-[#FBE5D8] space-y-4">
               {lessonFeatures.map((item, idx) => (
                 <li key={idx} className="flex items-start">
                   <span className="mr-3">•</span>
@@ -234,25 +227,23 @@ function LessonsPage() {
       {/* Group Students & Lesson Options */}
       <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 mb-16">
         {/* Group Students */}
-        <div className="w-[652px] h-[681px] bg-black rounded-[15px] p-[34px_39px]">
-          <div className="text-center mb-8">
+        <div className="bg-black rounded-[15px] p-8 flex flex-col justify-start">
+          <div className="text-center mb-4">
             <img
               src={student}
               alt="Students"
-              className="w-[188px] h-[188px] p-[23px] mx-auto mb-4"
+              className="w-40 h-40 p-6 mx-auto "
             />
-            <h3 className="font-afacad font-bold text-[50px] mb-2">
-              Group Students
-            </h3>
-            <p className="font-afacad text-[38px] text-[#DFB6B2]">
+            <h3 className="font-afacad font-bold text-5xl ">Group Students</h3>
+            <p className="font-afacad text-4xl text-[#DFB6B2]">
               Choose one option:
             </p>
           </div>
-          <div className="space-y-[24px]">
+          <div className="space-y-6">
             {groupOptions.map((option, idx) => (
               <div
                 key={idx}
-                className="w-[574px] h-[90px] bg-[#180018] rounded-[15px] p-[10px] text-[#FBE5D8] font-afacad text-[30px] leading-[100%]"
+                className="bg-[#180018] rounded-[15px] p-4 text-[#FBE5D8] font-afacad text-[30px] leading-[100%]"
               >
                 <span className="text-[#532959] font-semibold">
                   {option.label}
@@ -264,7 +255,7 @@ function LessonsPage() {
         </div>
 
         {/* Cards */}
-        <div className="space-y-6 ml-8">
+        <div className="space-y-6">
           {lessonCards.map((card) => (
             <LessonCard
               key={card.id}
