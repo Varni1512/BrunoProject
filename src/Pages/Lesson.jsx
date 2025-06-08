@@ -36,13 +36,13 @@ const groupOptions = [
 const lessonCards = [
   {
     id: "consultation",
-    title: "30’ Free Initial Consultation with Bruno",
+    title: "30' Free Initial Consultation with Bruno",
     content: (
       <>
         <p>
-          Join a free 30’ call with Bruno to discuss your goals and needs to
+          Join a free 30' call with Bruno to discuss your goals and needs to
           succeed on your Spanish journey, and have your first experience with
-          Bruno’s lessons. What it includes:
+          Bruno's lessons. What it includes:
         </p>
         <ul className="list-disc pl-5 space-y-2">
           <li>
@@ -82,7 +82,7 @@ const lessonCards = [
         </div>
 
         <div className="space-y-4">
-          <h3 className="text-lg font-semibold">50’ lesson: $30/27€ per individual session</h3>
+          <h3 className="text-lg font-semibold">50' lesson: $30/27€ per individual session</h3>
 
           <div>
             <p><strong>4-Lesson Package</strong></p>
@@ -116,7 +116,7 @@ const lessonCards = [
             </ul>
           </div>
 
-          <h3 className="text-lg font-semibold mt-6">80’ lesson: $45/40€ per individual session</h3>
+          <h3 className="text-lg font-semibold mt-6">80' lesson: $45/40€ per individual session</h3>
 
           <div>
             <p><strong>4-Lesson Package</strong></p>
@@ -175,7 +175,7 @@ const lessonCards = [
         </div>
 
         <div className="space-y-4">
-          <h3 className="text-lg font-semibold">50’ lesson: $30/27€ per individual session</h3>
+          <h3 className="text-lg font-semibold">50' lesson: $30/27€ per individual session</h3>
 
           <div>
             <p><strong>4-Lesson Package</strong></p>
@@ -209,7 +209,7 @@ const lessonCards = [
             </ul>
           </div>
 
-          <h3 className="text-lg font-semibold mt-6">80’ lesson: $45/40€ per individual session</h3>
+          <h3 className="text-lg font-semibold mt-6">80' lesson: $45/40€ per individual session</h3>
 
           <div>
             <p><strong>4-Lesson Package</strong></p>
@@ -340,16 +340,16 @@ const LessonCard = ({ id, title, content, expanded, onToggle }) => {
     >
       <button
         onClick={() => onToggle(id)}
-        className="w-full px-8 py-4 text-left flex justify-between items-center transition-colors "
+        className="w-full px-4 sm:px-8 py-4 text-left flex justify-between items-center transition-colors "
       >
-        <h4 className="text-2xl font-bold text-white">{title}</h4>
+        <h4 className="text-lg sm:text-2xl font-bold text-white">{title}</h4>
         <ChevronDown
           className={`w-6 h-6 shrink-0 ml-4 text-white transform transition-transform duration-300 ${expanded ? "rotate-180" : ""
             }`}
         />
       </button>
 
-      <div className="px-8 pb-8 text-[#FBE5D8] text-[18px] leading-relaxed flex-1">
+      <div className="px-4 sm:px-8 pb-8 text-[#FBE5D8] text-sm sm:text-[18px] leading-relaxed flex-1">
         {expanded ? (
           <div className="border-t border-[#B0859E] pt-4 space-y-4">
             {content}
@@ -372,36 +372,36 @@ function LessonsPage() {
   return (
     <div className="bg-[#180018] min-h-screen text-white pt-12">
       {/* Hero */}
-      <div className="text-center py-16 px-6">
-        <h1 className="font-afacad font-bold text-[70px] leading-[75px] mb-6">
+      <div className="text-center py-8 sm:py-16 px-6">
+        <h1 className="font-afacad font-bold text-[40px] sm:text-[70px] leading-[45px] sm:leading-[75px] mb-6">
           Lessons
         </h1>
-        <p className="text-[25px] max-w-7xl mx-auto font-afacad leading-relaxed text-[#FBE5D8]">
+        <p className="text-[18px] sm:text-[25px] max-w-7xl mx-auto font-afacad leading-relaxed text-[#FBE5D8]">
           Just like any great journey, you need more than a map; you need an
           experienced guide...
         </p>
       </div>
 
       {/* Lesson Includes */}
-      <div className="w-[1485px] h-[918px] rounded-[55px] bg-[rgba(83,41,89,0.42)] mx-auto px-6 mb-16">
-        <div className="flex flex-col lg:flex-row gap-12 items-center max-w-7xl mx-auto">
-          <div className="flex gap-8">
+      <div className="w-full max-w-[1485px] min-h-[400px] sm:h-[918px] rounded-[25px] sm:rounded-[55px] bg-[rgba(83,41,89,0.42)] mx-auto px-6 mb-16">
+        <div className="flex flex-col lg:flex-row gap-8 sm:gap-12 items-center max-w-7xl mx-auto pt-6">
+          <div className="flex gap-4 sm:gap-8 order-2 lg:order-1">
             <img
               src={lesson1}
               alt="Lesson 1"
-              className="w-[282px] h-[636px] rounded-[20px] object-cover mt-6"
+              className="w-[140px] sm:w-[282px] h-[300px] sm:h-[636px] rounded-[20px] object-cover mt-3 sm:mt-6"
             />
             <img
               src={lesson2}
               alt="Lesson 2"
-              className="w-[282px] h-[636px] rounded-[20px] object-cover mt-52"
+              className="w-[140px] sm:w-[282px] h-[300px] sm:h-[636px] rounded-[20px] object-cover mt-16 sm:mt-52"
             />
           </div>
-          <div className="flex-1">
-            <h2 className="font-afacad font-bold text-5xl leading-[75px] mb-8 whitespace-nowrap">
+          <div className="flex-1 order-1 lg:order-2">
+            <h2 className="font-afacad font-bold text-2xl sm:text-5xl leading-[30px] sm:leading-[75px] mb-4 sm:mb-8 lg:whitespace-nowrap">
               What all lessons include:
             </h2>
-            <ul className="font-afacad font-normal text-2xl text-[#FBE5D8] space-y-4">
+            <ul className="font-afacad font-normal text-sm sm:text-2xl text-[#FBE5D8] space-y-2 sm:space-y-4">
               {lessonFeatures.map((item, idx) => (
                 <li key={idx} className="flex items-start">
                   <span className="mr-3">•</span>
@@ -414,25 +414,25 @@ function LessonsPage() {
       </div>
 
       {/* Group Students & Lesson Options */}
-      <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 mb-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 mb-16">
         {/* Group Students */}
-        <div className="bg-black rounded-[15px] p-8 flex flex-col justify-start">
+        <div className="bg-black rounded-[15px] p-4 sm:p-8 flex flex-col justify-start order-1 lg:order-1">
           <div className="text-center mb-4">
             <img
               src={student}
               alt="Students"
-              className="w-40 h-40 p-6 mx-auto "
+              className="w-20 sm:w-24 lg:w-40 h-20 sm:h-24 lg:h-40 p-2 sm:p-3 lg:p-6 mx-auto"
             />
-            <h3 className="font-afacad font-bold text-5xl ">Group Students</h3>
-            <p className="font-afacad text-4xl text-[#DFB6B2]">
+            <h3 className="font-afacad font-bold text-xl sm:text-2xl lg:text-5xl">Group Students</h3>
+            <p className="font-afacad text-lg sm:text-xl lg:text-4xl text-[#DFB6B2]">
               Choose one option:
             </p>
           </div>
-          <div className="space-y-6">
+          <div className="space-y-3 sm:space-y-4 lg:space-y-6">
             {groupOptions.map((option, idx) => (
               <div
                 key={idx}
-                className="bg-[#180018] rounded-[15px] p-4 text-[#FBE5D8] font-afacad text-[30px] leading-[100%]"
+                className="bg-[#180018] rounded-[15px] p-3 sm:p-4 text-[#FBE5D8] font-afacad text-xs sm:text-sm lg:text-[30px] leading-[120%] sm:leading-[100%]"
               >
                 <span className="text-[#532959] font-semibold">
                   {option.label}
@@ -444,7 +444,7 @@ function LessonsPage() {
         </div>
 
         {/* Cards */}
-        <div className="space-y-6">
+        <div className="space-y-4 sm:space-y-6 order-2 lg:order-2">
           {lessonCards.map((card) => (
             <LessonCard
               key={card.id}
@@ -458,36 +458,36 @@ function LessonsPage() {
 
       {/* General Follow-Up Section */}
       <div
-        className="max-w-7xl mx-auto px-6 mb-16 bg-black rounded-lg p-8"
-        style={{ width: 1385, height: 665 }}
+        className="max-w-7xl mx-auto px-6 mb-16 bg-black rounded-lg p-4 sm:p-8"
+        style={{ maxWidth: 1385, minHeight: 400 }}
       >
-        <h3 className="text-4xl font-bold text-center mb-12">
+        <h3 className="text-2xl sm:text-4xl font-bold text-center mb-8 sm:mb-12">
           General Follow-Up scheduling
         </h3>
         <div
-          className="grid md:grid-cols-3 gap-8 text-center text-[#FBE5D8]"
-          style={{ fontFamily: "Afacad", fontSize: "22px" }}
+          className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-8 text-center text-[#FBE5D8]"
+          style={{ fontFamily: "Afacad", fontSize: "16px" }}
         >
           {followUpItems.map((item, idx) => (
-            <div key={idx}>
+            <div key={idx} className="sm:text-[22px]">
               <img
                 src={item.img}
                 alt="Icon"
-                className="w-12 h-12 mx-auto mb-4"
+                className="w-8 sm:w-12 h-8 sm:h-12 mx-auto mb-4"
               />
-              <h4 className="text-lg font-semibold mb-2">{item.title}</h4>
+              <h4 className="text-base sm:text-lg font-semibold mb-2">{item.title}</h4>
               {item.subtitle && (
-                <p className="text-lg font-semibold">{item.subtitle}</p>
+                <p className="text-base sm:text-lg font-semibold">{item.subtitle}</p>
               )}
             </div>
           ))}
         </div>
 
-        <h3 className="text-[50px] font-bold text-center mt-16 mb-8">
+        <h3 className="text-2xl sm:text-[50px] font-bold text-center mt-8 sm:mt-16 mb-4 sm:mb-8">
           Key Policies
         </h3>
-        <div className="rounded-lg p-8 bg-black/30">
-          <ul className="space-y-4 text-[30px] text-[#FBE5D8] pl-12">
+        <div className="rounded-lg p-4 sm:p-8 bg-black/30">
+          <ul className="space-y-2 sm:space-y-4 text-sm sm:text-[30px] text-[#FBE5D8] pl-6 sm:pl-12">
             {policies.map((policy, idx) => (
               <li key={idx} className="flex items-start">
                 <span className="mr-3">•</span>
