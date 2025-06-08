@@ -382,25 +382,25 @@ function LessonsPage() {
       </div>
 
       {/* Lesson Includes */}
-      <div className="w-full max-w-[1485px] min-h-[400px] sm:h-[918px] rounded-[25px] sm:rounded-[55px] bg-[rgba(83,41,89,0.42)] mx-auto px-6 mb-16">
-        <div className="flex flex-col lg:flex-row gap-8 sm:gap-12 items-center max-w-7xl mx-auto pt-6">
-          <div className="flex gap-4 sm:gap-8 order-2 lg:order-1">
+      <div className="w-full max-w-[1485px] min-h-[300px] sm:h-[630px] rounded-[25px] sm:rounded-[55px] bg-[rgba(83,41,89,0.42)] mx-auto px-6 mb-16">
+        <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 items-center max-w-7xl mx-auto pt-4 sm:pt-6 h-full">
+          <div className="flex gap-3 sm:gap-6 order-2 lg:order-1 h-full">
             <img
               src={lesson1}
               alt="Lesson 1"
-              className="w-[140px] sm:w-[282px] h-[300px] sm:h-[636px] rounded-[20px] object-cover mt-3 sm:mt-6"
+              className="w-[120px] sm:w-[240px] h-[250px] sm:h-[500px] rounded-[20px] object-cover mt-2 sm:mt-4"
             />
             <img
               src={lesson2}
               alt="Lesson 2"
-              className="w-[140px] sm:w-[282px] h-[300px] sm:h-[636px] rounded-[20px] object-cover mt-16 sm:mt-52"
+              className="w-[120px] sm:w-[240px] h-[250px] sm:h-[500px] rounded-[20px] object-cover mt-12 sm:mt-20"
             />
           </div>
           <div className="flex-1 order-1 lg:order-2">
-            <h2 className="font-afacad font-bold text-2xl sm:text-5xl leading-[30px] sm:leading-[75px] mb-4 sm:mb-8 lg:whitespace-nowrap">
+            <h2 className="font-afacad font-bold text-2xl sm:text-4xl leading-[30px] sm:leading-[50px] mb-3 sm:mb-6 lg:whitespace-nowrap">
               What all lessons include:
             </h2>
-            <ul className="font-afacad font-normal text-sm sm:text-2xl text-[#FBE5D8] space-y-2 sm:space-y-4">
+            <ul className="font-afacad font-normal text-sm sm:text-xl text-[#FBE5D8] space-y-2 sm:space-y-3">
               {lessonFeatures.map((item, idx) => (
                 <li key={idx} className="flex items-start">
                   <span className="mr-3">•</span>
