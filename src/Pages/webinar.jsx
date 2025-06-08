@@ -24,7 +24,7 @@ export default function WebinarSection() {
                 </h2>
 
                 {/* Description */}
-                <p className="text-[18px] sm:text-[40px] mb-6 sm:mb-8 leading-relaxed text-[#FBE5D8AD]" style={{ fontFamily: 'Afacad, sans-serif' }}>
+                <p className="text-[16px] sm:text-[32px] mb-6 sm:mb-8 leading-relaxed text-[#FBE5D8AD]" style={{ fontFamily: 'Afacad, sans-serif' }}>
                     Learning a new language is all about connections, and sometimes it can get
                     quite hard to walk this path alone. That is why, every month, a meeting with
                     Bruno and the rest of the community will be hosted. It's included if you have
