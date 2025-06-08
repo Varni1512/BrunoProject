@@ -66,15 +66,10 @@ export default function WebinarSection() {
 
                 {/* CTA Button */}
                 <button
-                    className="w-full max-w-[1338px] h-[50px] sm:h-[61px] flex items-center justify-center text-white font-semibold transition-colors duration-200 mx-auto"
-                    style={{
-                        borderRadius: '7px',
-                        padding: '7px 16px',
-                        gap: '8px',
-                        background: 'linear-gradient(95.5deg, #532959 2.54%, #824D69 54.24%, #532959 105.93%)',
-                    }}
+                    className="w-full max-w-[1338px] h-[50px] sm:h-[61px] flex items-center justify-center text-white font-semibold transition-colors duration-200 mx-auto animated-border"
+                    
                 >
-                    Join Now
+                 <span>Join Now</span>   
                 </button>
 
 
