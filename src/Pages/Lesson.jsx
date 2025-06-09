@@ -33,258 +33,6 @@ const groupOptions = [
   },
 ];
 
-const lessonCards = [
-  {
-    id: "consultation",
-    title: "30' Free Initial Consultation with Bruno",
-    content: (
-      <>
-        <p>
-          Join a free 30' call with Bruno to discuss your goals and needs to
-          succeed on your Spanish journey, and have your first experience with
-          Bruno's lessons. What it includes:
-        </p>
-        <ul className="list-disc pl-5 space-y-2">
-          <li>
-            General discussion of goals, reasons to learn, and previous
-            experiences with the language, if any.
-          </li>
-          <li>
-            If previous knowledge, placement test to assess strengths and
-            weaknesses.
-          </li>
-          <li>
-            Explanation of the method I follow, and general immersion in a real
-            lesson with me.
-          </li>
-        </ul>
-        <button className="mt-4 w-full text-white py-2 rounded-md font-semibold animate-border">
-          <span>Book a Free Call</span>
-        </button>
-      </>
-    ),
-  },
-  {
-    id: "private",
-    title: "50/80' Private Lesson with Bruno",
-    content: (
-      <>
-        <p>
-          Take a step towards your goal: arrange a private lesson with Bruno tailored specifically to your needs.
-        </p>
-
-        <div className="mt-6 mb-8 rounded-lg overflow-hidden">
-          <img
-            src={lesson3}
-            alt="Bruno video call lesson"
-            className="w-full h-auto object-cover rounded-lg"
-          />
-        </div>
-
-        <div className="space-y-4">
-          <h3 className="text-lg font-semibold">50' lesson: $30/27€ per individual session</h3>
-
-          <div>
-            <p><strong>4-Lesson Package</strong></p>
-            <ul className="list-disc list-inside space-y-1">
-              <li>Regular: $120/108€ —→ Package: $110/99€</li>
-              <li>Discount: 8% (save $10/9€)</li>
-            </ul>
-          </div>
-
-          <div>
-            <p><strong>8-Lesson Package</strong></p>
-            <ul className="list-disc list-inside space-y-1">
-              <li>Regular: $240/216€ —→ Package: $216/195€</li>
-              <li>Discount: 10% (save $24/21€)</li>
-            </ul>
-          </div>
-
-          <div>
-            <p><strong>12-Lesson Package</strong></p>
-            <ul className="list-disc list-inside space-y-1">
-              <li>Regular: $360/324€ —→ Package: $315/284€</li>
-              <li>Discount: 12.5% (save $45/41€)</li>
-            </ul>
-          </div>
-
-          <div>
-            <p><strong>20-Lesson Package</strong></p>
-            <ul className="list-disc list-inside space-y-1">
-              <li>Regular: $600/540€ —→ Package: $510/459€</li>
-              <li>Discount: 15% (save $90/81€)</li>
-            </ul>
-          </div>
-
-          <h3 className="text-lg font-semibold mt-6">80' lesson: $45/40€ per individual session</h3>
-
-          <div>
-            <p><strong>4-Lesson Package</strong></p>
-            <ul className="list-disc list-inside space-y-1">
-              <li>Regular: $180/160€ —→ Package: $166/149€</li>
-              <li>Discount: 8% (save $14/13€)</li>
-            </ul>
-          </div>
-
-          <div>
-            <p><strong>8-Lesson Package</strong></p>
-            <ul className="list-disc list-inside space-y-1">
-              <li>Regular: $360/320€ —→ Package: $324/292€</li>
-              <li>Discount: 10% (save $36/28€)</li>
-            </ul>
-          </div>
-
-          <div>
-            <p><strong>12-Lesson Package</strong></p>
-            <ul className="list-disc list-inside space-y-1">
-              <li>Regular: $540/480€ —→ Package: $473/426€</li>
-              <li>Discount: 12.5% (save $67/60€)</li>
-            </ul>
-          </div>
-
-          <div>
-            <p><strong>20-Lesson Package</strong></p>
-            <ul className="list-disc list-inside space-y-1">
-              <li>Regular: $900/800€ —→ Package: $765/689€</li>
-              <li>Discount: 15% (save $135/122€)</li>
-            </ul>
-          </div>
-        </div>
-        <button className="mt-4 w-full text-white py-2 rounded-md font-semibold animate-border">
-          <span>Book a Free Call</span>
-        </button>
-      </>
-    )
-  },
-  {
-    id: "group",
-    title: "50/85' Group Lesson with Bruno",
-    content: (
-      <>
-        <p>
-          If you gathered a group of Spanish learners, here's where you guys can boost your progress:
-        </p>
-
-        <div className="mt-6 mb-8 rounded-lg overflow-hidden">
-          <img
-            src={lesson4}
-            alt="Bruno video call lesson"
-            className="w-full h-auto object-cover rounded-lg"
-          />
-
-        </div>
-
-        <div className="space-y-4">
-          <h3 className="text-lg font-semibold">50' lesson: $30/27€ per individual session</h3>
-
-          <div>
-            <p><strong>4-Lesson Package</strong></p>
-            <ul className="list-disc list-inside space-y-1">
-              <li>Regular: $120/108€ —→ Package: $110/99€</li>
-              <li>Discount: 8% (save $10/9€)</li>
-            </ul>
-          </div>
-
-          <div>
-            <p><strong>8-Lesson Package</strong></p>
-            <ul className="list-disc list-inside space-y-1">
-              <li>Regular: $240/216€ —→ Package: $216/195€</li>
-              <li>Discount: 10% (save $24/21€)</li>
-            </ul>
-          </div>
-
-          <div>
-            <p><strong>12-Lesson Package</strong></p>
-            <ul className="list-disc list-inside space-y-1">
-              <li>Regular: $360/324€ —→ Package: $315/284€</li>
-              <li>Discount: 12.5% (save $45/41€)</li>
-            </ul>
-          </div>
-
-          <div>
-            <p><strong>20-Lesson Package</strong></p>
-            <ul className="list-disc list-inside space-y-1">
-              <li>Regular: $600/540€ —→ Package: $510/459€</li>
-              <li>Discount: 15% (save $90/81€)</li>
-            </ul>
-          </div>
-
-          <h3 className="text-lg font-semibold mt-6">80' lesson: $45/40€ per individual session</h3>
-
-          <div>
-            <p><strong>4-Lesson Package</strong></p>
-            <ul className="list-disc list-inside space-y-1">
-              <li>Regular: $180/160€ —→ Package: $166/149€</li>
-              <li>Discount: 8% (save $14/13€)</li>
-            </ul>
-          </div>
-
-          <div>
-            <p><strong>8-Lesson Package</strong></p>
-            <ul className="list-disc list-inside space-y-1">
-              <li>Regular: $360/320€ —→ Package: $324/292€</li>
-              <li>Discount: 10% (save $36/28€)</li>
-            </ul>
-          </div>
-
-          <div>
-            <p><strong>12-Lesson Package</strong></p>
-            <ul className="list-disc list-inside space-y-1">
-              <li>Regular: $540/480€ —→ Package: $473/426€</li>
-              <li>Discount: 12.5% (save $67/60€)</li>
-            </ul>
-          </div>
-
-          <div>
-            <p><strong>20-Lesson Package</strong></p>
-            <ul className="list-disc list-inside space-y-1">
-              <li>Regular: $900/800€ —→ Package: $765/689€</li>
-              <li>Discount: 15% (save $135/122€)</li>
-            </ul>
-          </div>
-        </div>
-        <button className="mt-4 w-full text-white py-2 rounded-md font-semibold animate-border">
-          <span>Book a Free Call</span>
-        </button>
-      </>
-    )
-  },
-  {
-    id: "followup",
-    title: "Follow-Up Sessions",
-    content: (
-      <>
-        <p>
-          Join a call with Bruno to discuss your current challenges, achieved milestones, and future goals with the language, and receive personalized recommendations. These sessions include:
-        </p>
-
-        <ul className="list-disc list-inside space-y-2 mt-4">
-          <li>
-            Advanced NLP and coaching techniques to let go of any blockages that are impeding your progress.
-          </li>
-          <li>
-            Targetting any element that needs a boost and further revision.
-          </li>
-          <li>
-            General assessment of how far you are from your language goal.
-          </li>
-        </ul>
-
-        <h3 className="mt-6 font-semibold">Session Types & Pricing</h3>
-
-        <h4 className="mt-2 font-medium text-gray-300">Individual Students</h4>
-
-        <p className="mt-1">• 30-min Follow-Up Individual Session: $15/14€</p>
-
-        <button className="mt-4 w-full text-white py-2 rounded-md font-semibold animate-border">
-          <span>Book a Free Call</span>
-        </button>
-      </>
-    )
-
-  },
-];
-
 const followUpItems = [
   {
     img: clockImage,
@@ -442,16 +190,270 @@ function LessonsPage() {
           </div>
         </div>
 
-        {/* Cards */}
+        {/* Cards - Manual Implementation */}
         <div className="space-y-4 sm:space-y-6 order-2 lg:order-2">
-          {lessonCards.map((card) => (
-            <LessonCard
-              key={card.id}
-              {...card}
-              expanded={expandedSection === card.id}
-              onToggle={toggleSection}
-            />
-          ))}
+          {/* Card 1: Free Initial Consultation */}
+          <LessonCard
+            id="consultation"
+            title="30' Free Initial Consultation with Bruno"
+            expanded={expandedSection === "consultation"}
+            onToggle={toggleSection}
+            content={
+              <>
+                <p>
+                  Join a free 30' call with Bruno to discuss your goals and needs to
+                  succeed on your Spanish journey, and have your first experience with
+                  Bruno's lessons. What it includes:
+                </p>
+                <ul className="list-disc pl-5 space-y-2">
+                  <li>
+                    General discussion of goals, reasons to learn, and previous
+                    experiences with the language, if any.
+                  </li>
+                  <li>
+                    If previous knowledge, placement test to assess strengths and
+                    weaknesses.
+                  </li>
+                  <li>
+                    Explanation of the method I follow, and general immersion in a real
+                    lesson with me.
+                  </li>
+                </ul>
+                <button className="mt-4 w-full text-white py-2 rounded-md font-semibold animate-border">
+                  <span>Book a Free Call</span>
+                </button>
+              </>
+            }
+          />
+
+          {/* Card 2: Private Lesson */}
+          <LessonCard
+            id="private"
+            title="50/80' Private Lesson with Bruno"
+            expanded={expandedSection === "private"}
+            onToggle={toggleSection}
+            content={
+              <>
+                <p>
+                  Take a step towards your goal: arrange a private lesson with Bruno tailored specifically to your needs.
+                </p>
+
+                <div className="mt-6 mb-8 rounded-lg overflow-hidden">
+                  <img
+                    src={lesson3}
+                    alt="Bruno video call lesson"
+                    className="w-full h-auto object-cover rounded-lg"
+                  />
+                </div>
+
+                <div className="space-y-4">
+                  <h3 className="text-lg font-semibold">50' lesson: $30/27€ per individual session</h3>
+
+                  <div>
+                    <p><strong>4-Lesson Package</strong></p>
+                    <ul className="list-disc list-inside space-y-1">
+                      <li>Regular: $120/108€ —→ Package: $110/99€</li>
+                      <li>Discount: 8% (save $10/9€)</li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <p><strong>8-Lesson Package</strong></p>
+                    <ul className="list-disc list-inside space-y-1">
+                      <li>Regular: $240/216€ —→ Package: $216/195€</li>
+                      <li>Discount: 10% (save $24/21€)</li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <p><strong>12-Lesson Package</strong></p>
+                    <ul className="list-disc list-inside space-y-1">
+                      <li>Regular: $360/324€ —→ Package: $315/284€</li>
+                      <li>Discount: 12.5% (save $45/41€)</li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <p><strong>20-Lesson Package</strong></p>
+                    <ul className="list-disc list-inside space-y-1">
+                      <li>Regular: $600/540€ —→ Package: $510/459€</li>
+                      <li>Discount: 15% (save $90/81€)</li>
+                    </ul>
+                  </div>
+
+                  <h3 className="text-lg font-semibold mt-6">80' lesson: $45/40€ per individual session</h3>
+
+                  <div>
+                    <p><strong>4-Lesson Package</strong></p>
+                    <ul className="list-disc list-inside space-y-1">
+                      <li>Regular: $180/160€ —→ Package: $166/149€</li>
+                      <li>Discount: 8% (save $14/13€)</li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <p><strong>8-Lesson Package</strong></p>
+                    <ul className="list-disc list-inside space-y-1">
+                      <li>Regular: $360/320€ —→ Package: $324/292€</li>
+                      <li>Discount: 10% (save $36/28€)</li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <p><strong>12-Lesson Package</strong></p>
+                    <ul className="list-disc list-inside space-y-1">
+                      <li>Regular: $540/480€ —→ Package: $473/426€</li>
+                      <li>Discount: 12.5% (save $67/60€)</li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <p><strong>20-Lesson Package</strong></p>
+                    <ul className="list-disc list-inside space-y-1">
+                      <li>Regular: $900/800€ —→ Package: $765/689€</li>
+                      <li>Discount: 15% (save $135/122€)</li>
+                    </ul>
+                  </div>
+                </div>
+                <button className="mt-4 w-full text-white py-2 rounded-md font-semibold animate-border">
+                  <span>Book a Free Call</span>
+                </button>
+              </>
+            }
+          />
+
+          {/* Card 3: Group Lesson */}
+          <LessonCard
+            id="group"
+            title="50/85' Group Lesson with Bruno"
+            expanded={expandedSection === "group"}
+            onToggle={toggleSection}
+            content={
+              <>
+                <p>
+                  If you gathered a group of Spanish learners, here's where you guys can boost your progress:
+                </p>
+
+                <div className="mt-6 mb-8 rounded-lg overflow-hidden">
+                  <img
+                    src={lesson4}
+                    alt="Bruno video call lesson"
+                    className="w-full h-auto object-cover rounded-lg"
+                  />
+                </div>
+
+                <div className="space-y-4">
+                  <h3 className="text-lg font-semibold">50' lesson: $30/27€ per individual session</h3>
+
+                  <div>
+                    <p><strong>4-Lesson Package</strong></p>
+                    <ul className="list-disc list-inside space-y-1">
+                      <li>Regular: $120/108€ —→ Package: $110/99€</li>
+                      <li>Discount: 8% (save $10/9€)</li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <p><strong>8-Lesson Package</strong></p>
+                    <ul className="list-disc list-inside space-y-1">
+                      <li>Regular: $240/216€ —→ Package: $216/195€</li>
+                      <li>Discount: 10% (save $24/21€)</li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <p><strong>12-Lesson Package</strong></p>
+                    <ul className="list-disc list-inside space-y-1">
+                      <li>Regular: $360/324€ —→ Package: $315/284€</li>
+                      <li>Discount: 12.5% (save $45/41€)</li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <p><strong>20-Lesson Package</strong></p>
+                    <ul className="list-disc list-inside space-y-1">
+                      <li>Regular: $600/540€ —→ Package: $510/459€</li>
+                      <li>Discount: 15% (save $90/81€)</li>
+                    </ul>
+                  </div>
+
+                  <h3 className="text-lg font-semibold mt-6">80' lesson: $45/40€ per individual session</h3>
+
+                  <div>
+                    <p><strong>4-Lesson Package</strong></p>
+                    <ul className="list-disc list-inside space-y-1">
+                      <li>Regular: $180/160€ —→ Package: $166/149€</li>
+                      <li>Discount: 8% (save $14/13€)</li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <p><strong>8-Lesson Package</strong></p>
+                    <ul className="list-disc list-inside space-y-1">
+                      <li>Regular: $360/320€ —→ Package: $324/292€</li>
+                      <li>Discount: 10% (save $36/28€)</li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <p><strong>12-Lesson Package</strong></p>
+                    <ul className="list-disc list-inside space-y-1">
+                      <li>Regular: $540/480€ —→ Package: $473/426€</li>
+                      <li>Discount: 12.5% (save $67/60€)</li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <p><strong>20-Lesson Package</strong></p>
+                    <ul className="list-disc list-inside space-y-1">
+                      <li>Regular: $900/800€ —→ Package: $765/689€</li>
+                      <li>Discount: 15% (save $135/122€)</li>
+                    </ul>
+                  </div>
+                </div>
+                <button className="mt-4 w-full text-white py-2 rounded-md font-semibold animate-border">
+                  <span>Book a Free Call</span>
+                </button>
+              </>
+            }
+          />
+
+          {/* Card 4: Follow-Up Sessions */}
+          <LessonCard
+            id="followup"
+            title="Follow-Up Sessions"
+            expanded={expandedSection === "followup"}
+            onToggle={toggleSection}
+            content={
+              <>
+                <p>
+                  Join a call with Bruno to discuss your current challenges, achieved milestones, and future goals with the language, and receive personalized recommendations. These sessions include:
+                </p>
+
+                <ul className="list-disc list-inside space-y-2 mt-4">
+                  <li>
+                    Advanced NLP and coaching techniques to let go of any blockages that are impeding your progress.
+                  </li>
+                  <li>
+                    Targetting any element that needs a boost and further revision.
+                  </li>
+                  <li>
+                    General assessment of how far you are from your language goal.
+                  </li>
+                </ul>
+
+                <h3 className="mt-6 font-semibold">Session Types & Pricing</h3>
+
+                <h4 className="mt-2 font-medium text-gray-300">Individual Students</h4>
+
+                <p className="mt-1">• 30-min Follow-Up Individual Session: $15/14€</p>
+
+                <button className="mt-4 w-full text-white py-2 rounded-md font-semibold animate-border">
+                  <span>Book a Free Call</span>
+                </button>
+              </>
+            }
+          />
         </div>
       </div>
 
